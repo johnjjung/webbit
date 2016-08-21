@@ -56,6 +56,9 @@ module.exports = {
       '/terms': {
         component: require('./compiled/pages/terms.vue')
       },
+      '/posts': {
+        component: require('./compiled/pages/posts/create.vue')
+      },
       '*': {
         component: require('./compiled/pages/404.vue')
       }
