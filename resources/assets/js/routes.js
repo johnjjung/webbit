@@ -57,7 +57,13 @@ module.exports = {
         component: require('./compiled/pages/terms.vue')
       },
       '/posts': {
-        component: require('./compiled/pages/posts/create.vue')
+        component: require('./compiled/pages/posts.vue'),
+        auth: false,
+        subRoutes: {
+          '/create': {
+            component: require('./compiled/pages/posts/create.vue')
+          }
+        }
       },
       '*': {
         component: require('./compiled/pages/404.vue')
