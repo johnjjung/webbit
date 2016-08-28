@@ -1,5 +1,7 @@
-/node_modules
-/.idea
-/*.log
-public/aws-credentials.json
-public/aws-upload.conf.js
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
